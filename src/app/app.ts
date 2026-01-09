@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Header } from './header/header';
 import { User } from './user/user';
+import { DUMMY_USERS } from './dummy_users';
 
 @Component({
   selector: 'app-root',
@@ -9,4 +10,6 @@ import { User } from './user/user';
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
-export class AppComponent {}
+export class AppComponent {
+  users = DUMMY_USERS;
+}
