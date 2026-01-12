@@ -16,7 +16,7 @@ export class User {
   // @Input({required:true}) avatar! : string;
   // @Input({required:true}) name! : string;
   @Input({required:true}) user !: UserType;
-
+  @Input({required:true}) selected !: boolean;
   @Output() select = new EventEmitter();
 
   get imagePath(){
