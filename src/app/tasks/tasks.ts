@@ -8,5 +8,5 @@ import { DUMMY_USERS } from '../dummy_users';
   styleUrl: './tasks.css',
 })
 export class Tasks {
-  @Input({required:true}) name !: string
+  @Input() name ?: string
 }
