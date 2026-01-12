@@ -1,21 +1,9 @@
 import { Component, EventEmitter, Input, Output} from '@angular/core';
 
 import { DUMMY_USERS } from '../dummy_users';
+import { UserType } from './user.model';
 
 // const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);
-
-// type UserType = {
-//   id : string;
-//   avatar : string;
-//   name : string;
-// }
-
-interface UserType{
-  id : string;
-  avatar : string;
-  name : string;
-}
-
 
 @Component({
   selector: 'app-user',
